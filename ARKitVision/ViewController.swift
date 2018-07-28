@@ -98,7 +98,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSKViewDel
     private var currentBuffer: CVPixelBuffer?
     
     // Queue for dispatching vision classification requests
-    private let visionQueue = DispatchQueue(label: "com.example.apple-samplecode.ARKitVision.serialVisionQueue")
+    private let visionQueue = DispatchQueue(label: "io.finieloop-identifyAR.VisionQueue")
     
     // Run the Vision+ML classifier on the current image buffer.
     /// - Tag: ClassifyCurrentImage
